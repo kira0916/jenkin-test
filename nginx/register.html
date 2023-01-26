@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="register.css">
+	<title></title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="login">
+            <h2>Register</h2>
+            <div class="login_sns">
+            </div>
+            <form action="http://www.kb97.xyz/register.js" method="post" >
+                <div class="login_id">
+                    <h4>E-mail</h4>
+                    <input type="text" name="email" placeholder="Email">
+                </div>
+                <div class="login_pw">
+                    <h4>Password</h4>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div class="login_pw">
+                    <h4>password confirm</h4>
+                    <input type="password" name="password_confirm" placeholder="Password">
+                </div>
+                <div class="login_id">
+                    <h4>name</h4>
+                    <input type="text" name="full_name" placeholder="name">
+                </div>
+                <div class="login_id">
+                    <h4>phone number</h4>
+                    <input type="text" name="phone_number" placeholder="000-0000-0000">
+                </div>
+		    <h4>department</h4>
+		    <select name="department_name" id="department_name">
+		    <option value="">--Please choose an department--</option>
+		    <option value="경영지원본부">경영지원본부</option>
+		    <option value="IT인프라영엽본부">IT인프라영엽본부</option>
+		    <option value="IT인프라기술본부">IT인프라기술본부</option>
+		    <option value="미디어사업본부">미디어사업본부</option>
+		</select>
+                <div class="submit">
+                    <input type="submit" value="register">
+                </div>
+                <div class="submit">
+                    <input type="button" value="back to login" onclick="window.location='http://www.kb97.xyz/login.html'"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

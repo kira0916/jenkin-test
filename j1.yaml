@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs
+spec:
+  selector:
+    matchLabels:
+      app: nodejs
+  replicas: 1
+  template:
+    metadata:
+      labels: # labels to select/identify the deployment
+        app: nodejs
+    spec:     # pod spec
+      containers:
+        - name: nodejs
+          image: kangbock/nodejs:v3.6 # docker image name
+          ports:
+            - containerPort: 3000
