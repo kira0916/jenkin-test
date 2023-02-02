@@ -14,6 +14,6 @@ spec:
     spec:     # pod spec
       containers:
         - name: nodejs
-          image: hychai/nodejs:v3.6 # docker image name
+          image: heeyoonchai/nodejs:latest # docker image name
           ports:
             - containerPort: 3000
